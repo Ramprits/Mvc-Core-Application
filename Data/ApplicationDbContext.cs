@@ -11,7 +11,7 @@ namespace Mvc_Core_Application.Data
             : base(options)
         {
         }
-        public DbSet<Employee> EmEmployees { get; set; }
+        public DbSet<Employee> Employees { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
