@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Mvc_Core_Application.Data;
+using Mvc_Core_Application.Infrastructure;
 using Mvc_Core_Application.Models;
 using Mvc_Core_Application.Services;
 
@@ -44,6 +45,7 @@ namespace Mvc_Core_Application
                 .AddDefaultTokenProviders();
 
             services.AddMvc();
+
 
             // Add application services.
             services.AddTransient<IEmailSender, AuthMessageSender>();

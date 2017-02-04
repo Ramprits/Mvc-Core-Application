@@ -12,9 +12,14 @@ namespace Mvc_Core_Application.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+        public IActionResult Index
         {
-            return View(_context.Employees.ToList());
+            get
+            {
+                return View(_context.Employees.ToList());
+            }
         }
+
+        
     }
 }

@@ -1,0 +1,38 @@
+@model IEnumerable<Mvc_Core_Application.Models.EmployeeViewModel.Employee>
+     <div class="well" style="margin-top: 20px;">Employee Detail List</div>
+     <button type="button" class="btn btn-primary" style="margin-bottom: 10px;">Create New Employee</button>   
+       <table class="table table-borderd table-responsive">
+          <thead>
+               <tr class="bg-primary">
+                    <td>Id</td>
+                    <td>Name</td>
+                    <td>Address</td>
+                    <td>CreatedBy</td>
+                    <td>CreatedDate</td>
+                    <td>Email</td>
+                    <td>Gender</td>
+                    <td>Image</td>
+                    <td>Mobile</td>
+                    <td>ModifiedBy</td>
+                    <td>ModifiedDate</td>
+               </tr>
+          </thead>
+          <tbody>
+               @foreach(var item in Model)
+               {
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td>@item.Address</td>
+                    <td>@item.CreatedBy</td>
+                    <td>@item.CreatedDate</td>
+                    <td>@item.Email</td>
+                    <td>@item.Gender</td>
+                    <td>@item.Image</td>
+                    <td>@item.Mobile</td>
+                    <td>@item.ModifiedBy</td>
+                    <td>@item.ModifiedDate</td>
+               
+               }
+          </tbody>
+     </table>
+     
